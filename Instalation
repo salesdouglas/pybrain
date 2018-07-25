@@ -1,0 +1,45 @@
+Get it
+Make sure you have the dependencies.
+
+Option 1: If you have setuptools/easy_install, you can get the latest stable release from the cheeseshop directly, and set up automatically:
+$ easy_install structure pybrain
+
+Option 2: Download it from here. Unpack it.
+
+Option 3: Get the bleeding edge from the git repository:
+
+$ git clone https://github.com/pybrain/pybrain.git
+
+Set it up
+If you have setuptools, run (you may need to do this as superuser on Unix systems):
+
+$ python setup.py install
+
+If the above fails, you can also try installing with pip via:
+
+$ cd pybrain 
+$ sudo pip install . 
+
+Alternatively run pip install . --user to install it for the current user only.
+Otherwise: Update the PYTHONPATH environment variable to include the location of pybrain. 
+
+$ export PYTHONPATH=$PYTHONPATH:`pwd`
+
+Verify
+$ python
+
+Python 2.5.2 (r252:60911, Sep 17 2008, 11:21:23)
+
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> import pybrain
+>>>
+
+Or if you want to be more thorough:
+
+$ cd pybrain/tests
+$ python runtests.py
+INFO Tests found: […]
+
+...............................
+----------------------------------------------------------------------
